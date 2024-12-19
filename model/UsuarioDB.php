@@ -4,5 +4,7 @@
      * @version 19/12/2024
      * @since 19/12/2024
      */
-    require_once 'config/confAPP.php';
+    interface UsuarioDB{
+        public function validarUsuario($codigoUsuario, $contrasenaUsuario);
+    }
 ?>

@@ -1,0 +1,93 @@
+:root{
+    --color1:#f6d76b;
+    --color2:#ff9036;
+    --color3:#d6254d;
+    --color4:#ff5475;
+    --color5:#fdeba9;
+    --color6:#8b0000;
+}
+/*Reseteo*/
+*{
+    margin: 5px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+a:link, a:visited, a:hover, a:active{
+    color: var(--color3);
+}
+h1{
+    text-align: center;
+    color: var(--color5);
+    background-color: var(--color4);
+    border-radius: 50px;
+    border: 2.5px solid var(--color6);
+}
+main{
+    /*Página principal*/
+    #idiomas{
+        position: relative;
+        a{
+            transition: all 0.5s ease-in-out;
+        }
+        a:hover{
+            color: var(--color6);
+            font-size: 20px;
+        }
+        #idiomaEscogido{
+            color: var(--color6);
+            font-size: 20px;
+        }
+        button{
+            position: absolute;
+            right: 0;
+            a:hover{
+                color: var(--color3);
+                font-size: calc(40px/3);
+            }
+        }
+        form{
+            position: absolute;
+            right: 0;
+            top: -40%;
+            input{
+                color: var(--color3);
+                font-size: calc(40px/3);
+            }
+        }
+        form:nth-of-type(2){
+            right: 100px;
+        }
+    }
+    #mapaAplicacion{
+        display: flex;
+        justify-self: center;
+    }
+    /*Pagina log in*/
+    #formulariologin{
+        h2{
+            text-align: center;
+        }
+        table{
+            margin: 5px auto;
+            border: 0.5px solid lightgrey;
+            border-radius: 5px;
+            background-color: #f0f0f5;
+            width: fit-content;
+        }
+    }
+}
+footer{
+    background-color: white;
+    border-radius: 10px;
+    border: 2.5px solid var(--color5);
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    p{
+        color: var(--color3);
+    }
+}
