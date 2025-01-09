@@ -15,11 +15,5 @@
         header('Location: ' . $_SERVER['PHP_SELF']);
         exit();
     }
-    // Redirige a la página de login si se pulsa el botón
-    if (isset($_REQUEST['login'])) {  
-        $_SESSION['paginaEnCurso'] = 'login';
-        header('Location: index.php');
-        exit();
-    }
     require_once $aVistas['layout'];
 ?>

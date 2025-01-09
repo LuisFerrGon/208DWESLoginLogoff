@@ -1,9 +1,10 @@
 <?php
     /**
      * @author Luis Ferreras González
-     * @version 08/01/2025
-     * @since 19/12/2024
+     * @version 1.0.0 Fecha última modificación del archivo: 09/01/2025
+     * @since 1.0.0
      */
+
     //Configuración de la aplicación
     require_once 'config/confAPP.php';
     //Configuración de la base de datos
