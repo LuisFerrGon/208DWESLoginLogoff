@@ -1,7 +1,7 @@
 <?php
     /**
      * @author Luis Ferreras González
-     * @version 1.0.0 Fecha última modificación del archivo: 08/01/2025
+     * @version 1.0.0 Fecha última modificación del archivo: 10/01/2025
      * @since 1.0.0
      */
 
@@ -18,7 +18,7 @@
     $aControladores=[
         'inicioPublico'=>'controller/cInicioPublico.php',
         'login'=>'controller/cLogin.php',
-        'inicioPrivado'=>'controller/cIncioPrivado.php',
+        'inicioPrivado'=>'controller/cInicioPrivado.php',
         'tecnologias'=>'controller/cTecnologias.php',
         'rss'=>'controller/cRSS.php',
         'registro'=>'controller/cRegistro.php',
@@ -33,7 +33,7 @@
         'layout'=>'view/vLayout.php',
         'inicioPublico'=>'view/vInicioPublico.php',
         'login'=>'view/vLogin.php',
-        'inicioPrivado'=>'view/vIncioPrivado.php',
+        'inicioPrivado'=>'view/vInicioPrivado.php',
         'tecnologias'=>'view/vview/vTecnologias.php',
         'rss'=>'view/vRSS.php',
         'registro'=>'view/vRegistro.php',

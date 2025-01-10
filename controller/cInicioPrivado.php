@@ -16,15 +16,4 @@
         exit();
     }
     require_once $aVistas['layout'];
-    require_once 'core/lValidacionFormularios.php';
-    require_once 'config/confDB.php';
-    if(isset($_REQUEST['login'])){
-        $oUsuarioActivo=UsuarioPDO::validarUsuario($_REQUEST['codigoUsuario'], $_REQUEST['contrasenaUsuario']);
-        if($oUsuarioActivo!=null){
-            $_SESSION['usuarioDAW208LoginLogoff']=$oUsuarioActivo;
-            $_SESSION['paginaEnCurso']='inicioPrivado';
-            header('Location: index.php');
-            exit();
-        }
-    }
 ?>

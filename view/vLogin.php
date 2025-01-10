@@ -1,9 +1,14 @@
 <?php
     /**
      * @author Luis Ferreras González
-     * @version 1.0.0 Fecha última modificación del archivo: 09/01/2025
+     * @version 1.0.0 Fecha última modificación del archivo: 10/01/2025
      * @since 1.0.0
      */
+
+    define('T_MAX_ALFABETICO', 8);
+    define('T_MIN_ALFABETICO', 4);
+    define('MAX_PASS', 8);
+    define('MIN_PASS', 4);
 ?>
 <form>
     <button type="submit" name="volver">Volver</button>
