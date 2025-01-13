@@ -1,7 +1,7 @@
 <?php
     /**
      * @author Luis Ferreras González
-     * @version 1.0.0 Fecha última modificación del archivo: 09/01/2025
+     * @version 1.0.0 Fecha última modificación del archivo: 13/01/2025
      * @since 1.0.0
      */
 
@@ -12,10 +12,10 @@
      * Clase para crear conexiones con una base de datos
      * 
      * @author Luis Ferreras González
-     * @version 1.0.0 Fecha última modificación: 09/01/2025
+     * @version 1.0.0 Fecha última modificación: 13/01/2025
      * @since 1.0.0
      */
-    class DBPDO implements DB{
+    class DBPDO extends UsuarioPDO implements DB{
         /**
          * Funcion ejecutarConsulta
          * 
