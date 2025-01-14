@@ -1,17 +1,17 @@
 <?php
     /**
      * @author Luis Ferreras González
-     * @version 1.0.0 Fecha última modificación del archivo: 13/01/2025
+     * @version 1.0.0 Fecha última modificación del archivo: 14/01/2025
      * @since 1.0.0
      */
 
     /**
      * 
      * @author Luis Ferreras González
-     * @version 1.0.0 Fecha última modificación: 13/01/2025
+     * @version 1.0.0 Fecha última modificación: 14/01/2025
      * @since 1.0.0
      */
-    class Usuario extends UsuarioPDO{
+    class Usuario{
         /**
          * @var string $codUsuario Cadena del código de usuario, max length=8.
          * @var string $password Cadena de la contraseña de usuario, max length=64.

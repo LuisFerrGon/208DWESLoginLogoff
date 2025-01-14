@@ -11,18 +11,18 @@
     margin: 5px;
     padding: 0px;
 }
-a{
-    text-decoration: none;
-}
 a:link, a:visited, a:hover, a:active{
     color: var(--color3);
+    text-decoration: none;
 }
-h1{
-    text-align: center;
-    color: var(--color5);
-    background-color: var(--color4);
-    border-radius: 50px;
-    border: 2.5px solid var(--color6);
+header{
+    h1{
+        text-align: center;
+        color: var(--color5);
+        background-color: var(--color4);
+        border-radius: 50px;
+        border: 2.5px solid var(--color6);
+    }
 }
 main{
     /*Página principal*/
@@ -64,6 +64,11 @@ main{
         display: flex;
         justify-self: center;
     }
+    form{
+        .obligatorio{
+            background-color: lightyellow; 
+        }
+    }
     /*Pagina log in*/
     #formulariologin{
         h2{
@@ -89,5 +94,9 @@ footer{
     width: 100%;
     p{
         color: var(--color3);
+    }
+    a:link, a:visited, a:hover, a:active{
+        color: var(--color3);
+        text-decoration: none;
     }
 }

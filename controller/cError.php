@@ -5,12 +5,15 @@
      * @since 1.0.0
      */
 
-    // Redirige a la página de login si se pulsa el botón
-    if(isset($_REQUEST['login'])){
-        $_SESSION['paginaAnterior']='inicioPublico';
-        $_SESSION['paginaEnCurso']='login';
+    if(isset($_REQUEST['volver'])){
+        $_SESSION['paginaEnCurso']=$_SESSION['paginaAnterior'];
         header('Location: index.php');
         exit();
+    }
+    if(isset($_SESSION['error'])){
+        $avError=[
+            
+        ];
     }
     require_once $aVistas['layout'];
 ?>

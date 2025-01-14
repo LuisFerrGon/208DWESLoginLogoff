@@ -1,9 +1,26 @@
 <?php
     /**
      * @author Luis Ferreras González
-     * @version 1.0.0 Fecha última modificación del archivo: 13/01/2025
+     * @version 1.0.0 Fecha última modificación del archivo: 14/01/2025
      * @since 1.0.0
      */
+    /**
+     * @var array $bienvenida Array que contiene el mensaje de bienvenida.
+     */
+    $bienvenida=[
+        'es'=>[
+           0=>"¡Bienvenido ".$avInicioPrivado['descripcion']."! Esta es la primera vez que te conectas.",
+           1=>"¡Bienvenido de nuevo ".$avInicioPrivado['descripcion']."! Esta es la ".$avInicioPrivado['conexiones']."ª vez que te conectas, te conectaste por última vez el ".date('d/m/Y H:i:s', $avInicioPrivado['fecha'])
+        ],
+        'en'=>[
+           0=>"Welcome ".$avInicioPrivado['descripcion']."! This is the first time you log in.",
+           1=>"Welcome again ".$avInicioPrivado['descripcion']."! You have logged in ".$avInicioPrivado['conexiones']." times, last time was ".date('m/d/Y H:i:s', $avInicioPrivado['fecha'])
+        ],
+        'pt' => [
+            0 => "Bem-vindo ".$avInicioPrivado['descripcion']."! Esta é a primeira vez que você se conecta.",
+            1 => "Bem-vindo de volta ".$avInicioPrivado['descripcion']."! Esta é a ".$avInicioPrivado['conexiones']." vez que você se conecta, e você se conectou pela última vez em ".date('d/m/Y H:i:s', $avInicioPrivado['fecha'])
+        ]
+    ];
 ?>
 <div id="idiomas">
     <a href="?idioma=es" <?php if($idioma=="es"){echo "id='idiomaEscogido'";}?>>Español</a>
@@ -12,8 +29,11 @@
     <form>
         <input type="submit" name="cerrarsesion" value="Cerrar Sesión">
     </form>
+    <form>
+        <input type="submit" name="detalle" value="Detalle">
+    </form>
 </div>
 <?php
-    echo "<p>".$bienvenida[$idioma][$conexiones!=0]."</p>";
+    echo "<p>".$bienvenida[$idioma][$avInicioPrivado['conexiones']>1]."</p>";
 ?>
 <div style='height: 30px'></div>

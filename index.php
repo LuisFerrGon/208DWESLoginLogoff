@@ -1,7 +1,7 @@
 <?php
     /**
      * @author Luis Ferreras González
-     * @version 1.0.0 Fecha última modificación del archivo: 09/01/2025
+     * @version 1.0.0 Fecha última modificación del archivo: 14/01/2025
      * @since 1.0.0
      */
 
@@ -14,6 +14,16 @@
     //Si no hay pagina en cuso en la sesion se asigna una
     if(!isset($_SESSION['paginaEnCurso'])){
         $_SESSION['paginaEnCurso']='inicioPublico';
+    }
+    // Si la cookie está vacia se crea y se le pone un valor por defecto
+    if(!isset($_COOKIE['idioma'])){
+        setcookie('idioma', 'en', time()+60, '/');
+    }
+    // Si el idioma enviado está vacio o es null
+    if(isset($_REQUEST['idioma'])){
+        setcookie('idioma', $_REQUEST['idioma'], time() + 60, '/');
+        header('Location: ' . $_SERVER['PHP_SELF']);
+        exit();
     }
     //Se carga la página
     require_once $aControladores[$_SESSION['paginaEnCurso']];

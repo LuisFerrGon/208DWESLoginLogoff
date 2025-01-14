@@ -16,6 +16,41 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/default.html#constant_CONTRASENA"
         },                {
+            "fqsen": "\\mostrarSuperglobal\u0028\u0029",
+            "name": "mostrarSuperglobal",
+            "summary": "Funcion\u0020para\u0020mostrar\u0020el\u0020valor\u0020de\u0020una\u0020variable\u0020superglobal",
+            "url": "namespaces/default.html#function_mostrarSuperglobal"
+        },                {
+            "fqsen": "\\OBLIGATORIO",
+            "name": "OBLIGATORIO",
+            "summary": "",
+            "url": "namespaces/default.html#constant_OBLIGATORIO"
+        },                {
+            "fqsen": "\\MAX_ALFABETICO",
+            "name": "MAX_ALFABETICO",
+            "summary": "",
+            "url": "namespaces/default.html#constant_MAX_ALFABETICO"
+        },                {
+            "fqsen": "\\MIN_ALFABETICO",
+            "name": "MIN_ALFABETICO",
+            "summary": "",
+            "url": "namespaces/default.html#constant_MIN_ALFABETICO"
+        },                {
+            "fqsen": "\\MAX_PASS",
+            "name": "MAX_PASS",
+            "summary": "",
+            "url": "namespaces/default.html#constant_MAX_PASS"
+        },                {
+            "fqsen": "\\MIN_PASS",
+            "name": "MIN_PASS",
+            "summary": "",
+            "url": "namespaces/default.html#constant_MIN_PASS"
+        },                {
+            "fqsen": "\\DEBIL",
+            "name": "DEBIL",
+            "summary": "",
+            "url": "namespaces/default.html#constant_DEBIL"
+        },                {
             "fqsen": "\\validacionFormularios",
             "name": "validacionFormularios",
             "summary": "Clase\u0020de\u0020validacion\u0020de\u0020formularios",
@@ -146,10 +181,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Usuario.html#method_getDescUsuario"
         },                {
-            "fqsen": "\\Usuario\u003A\u003AgetNumAccesos\u0028\u0029",
-            "name": "getNumAccesos",
+            "fqsen": "\\Usuario\u003A\u003AgetNumConexiones\u0028\u0029",
+            "name": "getNumConexiones",
             "summary": "",
-            "url": "classes/Usuario.html#method_getNumAccesos"
+            "url": "classes/Usuario.html#method_getNumConexiones"
         },                {
             "fqsen": "\\Usuario\u003A\u003AgetFechaHoraUltimaConexion\u0028\u0029",
             "name": "getFechaHoraUltimaConexion",
@@ -166,6 +201,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Usuario.html#method_getPerfil"
         },                {
+            "fqsen": "\\Usuario\u003A\u003AgetImagenUsuario\u0028\u0029",
+            "name": "getImagenUsuario",
+            "summary": "",
+            "url": "classes/Usuario.html#method_getImagenUsuario"
+        },                {
+            "fqsen": "\\Usuario\u003A\u003AgetListaOpinionesUsuario\u0028\u0029",
+            "name": "getListaOpinionesUsuario",
+            "summary": "",
+            "url": "classes/Usuario.html#method_getListaOpinionesUsuario"
+        },                {
             "fqsen": "\\Usuario\u003A\u003AsetCodUsuario\u0028\u0029",
             "name": "setCodUsuario",
             "summary": "",
@@ -181,10 +226,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Usuario.html#method_setDescUsuario"
         },                {
-            "fqsen": "\\Usuario\u003A\u003AsetNumAccesos\u0028\u0029",
-            "name": "setNumAccesos",
+            "fqsen": "\\Usuario\u003A\u003AsetNumConexiones\u0028\u0029",
+            "name": "setNumConexiones",
             "summary": "",
-            "url": "classes/Usuario.html#method_setNumAccesos"
+            "url": "classes/Usuario.html#method_setNumConexiones"
         },                {
             "fqsen": "\\Usuario\u003A\u003AsetFechaHoraUltimaConexion\u0028\u0029",
             "name": "setFechaHoraUltimaConexion",
@@ -201,6 +246,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Usuario.html#method_setPerfil"
         },                {
+            "fqsen": "\\Usuario\u003A\u003AsetImagenUsuario\u0028\u0029",
+            "name": "setImagenUsuario",
+            "summary": "",
+            "url": "classes/Usuario.html#method_setImagenUsuario"
+        },                {
+            "fqsen": "\\Usuario\u003A\u003AsetListaOpinionesUsuario\u0028\u0029",
+            "name": "setListaOpinionesUsuario",
+            "summary": "",
+            "url": "classes/Usuario.html#method_setListaOpinionesUsuario"
+        },                {
             "fqsen": "\\Usuario\u003A\u003A\u0024codUsuario",
             "name": "codUsuario",
             "summary": "",
@@ -216,10 +271,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Usuario.html#property_descUsuario"
         },                {
-            "fqsen": "\\Usuario\u003A\u003A\u0024numAccesos",
-            "name": "numAccesos",
+            "fqsen": "\\Usuario\u003A\u003A\u0024numConexiones",
+            "name": "numConexiones",
             "summary": "",
-            "url": "classes/Usuario.html#property_numAccesos"
+            "url": "classes/Usuario.html#property_numConexiones"
         },                {
             "fqsen": "\\Usuario\u003A\u003A\u0024fechaHoraUltimaConexion",
             "name": "fechaHoraUltimaConexion",
@@ -235,6 +290,16 @@ Search.appendIndex(
             "name": "perfil",
             "summary": "",
             "url": "classes/Usuario.html#property_perfil"
+        },                {
+            "fqsen": "\\Usuario\u003A\u003A\u0024imagenUsuario",
+            "name": "imagenUsuario",
+            "summary": "",
+            "url": "classes/Usuario.html#property_imagenUsuario"
+        },                {
+            "fqsen": "\\Usuario\u003A\u003A\u0024listaOpinionesUsuario",
+            "name": "listaOpinionesUsuario",
+            "summary": "",
+            "url": "classes/Usuario.html#property_listaOpinionesUsuario"
         },                {
             "fqsen": "\\UsuarioDB",
             "name": "UsuarioDB",
@@ -253,28 +318,68 @@ Search.appendIndex(
         },                {
             "fqsen": "\\UsuarioPDO\u003A\u003AvalidarUsuario\u0028\u0029",
             "name": "validarUsuario",
-            "summary": "",
+            "summary": "Funci\u00F3n\u0020para\u0020validar\u0020un\u0020usuario",
             "url": "classes/UsuarioPDO.html#method_validarUsuario"
+        },                {
+            "fqsen": "\\UsuarioPDO\u003A\u003AregistrarUltimaConexion\u0028\u0029",
+            "name": "registrarUltimaConexion",
+            "summary": "Funcion\u0020para\u0020cambiar\u0020la\u0020ultima\u0020conexion\u0020y\u0020el\u0020numero\u0020de\u0020estas.",
+            "url": "classes/UsuarioPDO.html#method_registrarUltimaConexion"
+        },                {
+            "fqsen": "\\UsuarioPDO\u003A\u003AbuscarUsuarioPorCod\u0028\u0029",
+            "name": "buscarUsuarioPorCod",
+            "summary": "",
+            "url": "classes/UsuarioPDO.html#method_buscarUsuarioPorCod"
         },                {
             "fqsen": "\\UsuarioPDO\u003A\u003AaltaUsuario\u0028\u0029",
             "name": "altaUsuario",
             "summary": "",
             "url": "classes/UsuarioPDO.html#method_altaUsuario"
         },                {
+            "fqsen": "\\UsuarioPDO\u003A\u003AvalidarCodNoExiste\u0028\u0029",
+            "name": "validarCodNoExiste",
+            "summary": "",
+            "url": "classes/UsuarioPDO.html#method_validarCodNoExiste"
+        },                {
             "fqsen": "\\UsuarioPDO\u003A\u003AmodificarUsuario\u0028\u0029",
             "name": "modificarUsuario",
             "summary": "",
             "url": "classes/UsuarioPDO.html#method_modificarUsuario"
         },                {
-            "fqsen": "\\UsuarioPDO\u003A\u003AborarUsuario\u0028\u0029",
-            "name": "borarUsuario",
+            "fqsen": "\\UsuarioPDO\u003A\u003AcambiarPassword\u0028\u0029",
+            "name": "cambiarPassword",
             "summary": "",
-            "url": "classes/UsuarioPDO.html#method_borarUsuario"
+            "url": "classes/UsuarioPDO.html#method_cambiarPassword"
         },                {
-            "fqsen": "\\UsuarioPDO\u003A\u003AvalidarCodNoExiste\u0028\u0029",
-            "name": "validarCodNoExiste",
+            "fqsen": "\\UsuarioPDO\u003A\u003AborrarUSuario\u0028\u0029",
+            "name": "borrarUSuario",
             "summary": "",
-            "url": "classes/UsuarioPDO.html#method_validarCodNoExiste"
+            "url": "classes/UsuarioPDO.html#method_borrarUSuario"
+        },                {
+            "fqsen": "\\UsuarioPDO\u003A\u003AbuscarUsuariosPorDesc\u0028\u0029",
+            "name": "buscarUsuariosPorDesc",
+            "summary": "",
+            "url": "classes/UsuarioPDO.html#method_buscarUsuariosPorDesc"
+        },                {
+            "fqsen": "\\UsuarioPDO\u003A\u003AcreaOpinion\u0028\u0029",
+            "name": "creaOpinion",
+            "summary": "",
+            "url": "classes/UsuarioPDO.html#method_creaOpinion"
+        },                {
+            "fqsen": "\\UsuarioPDO\u003A\u003AmodificaOpinion\u0028\u0029",
+            "name": "modificaOpinion",
+            "summary": "",
+            "url": "classes/UsuarioPDO.html#method_modificaOpinion"
+        },                {
+            "fqsen": "\\UsuarioPDO\u003A\u003AborraOpinion\u0028\u0029",
+            "name": "borraOpinion",
+            "summary": "",
+            "url": "classes/UsuarioPDO.html#method_borraOpinion"
+        },                {
+            "fqsen": "\\UsuarioPDO\u003A\u003AbuscarOpinionUsuario\u0028\u0029",
+            "name": "buscarOpinionUsuario",
+            "summary": "",
+            "url": "classes/UsuarioPDO.html#method_buscarOpinionUsuario"
         },                {
             "fqsen": "\\",
             "name": "\\",

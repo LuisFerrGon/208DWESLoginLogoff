@@ -1,7 +1,7 @@
 <?php
     /**
      * @author Luis Ferreras González
-     * @version 1.0.0 Fecha última modificación del archivo: 10/01/2025
+     * @version 1.0.0 Fecha última modificación del archivo: 14/01/2025
      * @since 1.0.0
      */
 
@@ -10,7 +10,7 @@
     //Modelos
     require_once 'model/DB.php';
     require_once 'model/DBPDO.php';
-    require_once 'model/Error.php';
+    require_once 'model/ErrorApp.php';
     require_once 'model/Usuario.php';
     require_once 'model/UsuarioDB.php';
     require_once 'model/UsuarioPDO.php';
@@ -34,7 +34,7 @@
         'inicioPublico'=>'view/vInicioPublico.php',
         'login'=>'view/vLogin.php',
         'inicioPrivado'=>'view/vInicioPrivado.php',
-        'tecnologias'=>'view/vview/vTecnologias.php',
+        'tecnologias'=>'view/view/vTecnologias.php',
         'rss'=>'view/vRSS.php',
         'registro'=>'view/vRegistro.php',
         'miCuenta'=>'view/vMiCuenta.php',
