@@ -17,6 +17,18 @@
         header('Location: index.php');
         exit();
     }
+    if(isset($_REQUEST['rest'])){
+        $_SESSION['paginaAnterior']='inicioPrivado';
+        $_SESSION['paginaEnCurso']='wip';
+        header('Location: index.php');
+        exit();
+    }
+    if(isset($_REQUEST['error'])){
+        $_SESSION['paginaAnterior']='inicioPrivado';
+        $_SESSION['paginaEnCurso']='error';
+        header('Location: index.php');
+        exit();
+    }
     
     $idioma=isset($_COOKIE['idioma']) ? $_COOKIE['idioma'] : 'en';
     $oUsuarioActivo=$_SESSION['usuarioDAW208LoginLogoff'];

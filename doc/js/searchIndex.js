@@ -18,7 +18,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\mostrarSuperglobal\u0028\u0029",
             "name": "mostrarSuperglobal",
-            "summary": "Funcion\u0020para\u0020mostrar\u0020el\u0020valor\u0020de\u0020una\u0020variable\u0020superglobal",
+            "summary": "Funcion\u0020para\u0020mostrar\u0020una\u0020variable\u0020superglobal",
             "url": "namespaces/default.html#function_mostrarSuperglobal"
         },                {
             "fqsen": "\\OBLIGATORIO",
@@ -50,6 +50,26 @@ Search.appendIndex(
             "name": "DEBIL",
             "summary": "",
             "url": "namespaces/default.html#constant_DEBIL"
+        },                {
+            "fqsen": "\\MAX_CODIGO",
+            "name": "MAX_CODIGO",
+            "summary": "",
+            "url": "namespaces/default.html#constant_MAX_CODIGO"
+        },                {
+            "fqsen": "\\MIN_CODIGO",
+            "name": "MIN_CODIGO",
+            "summary": "",
+            "url": "namespaces/default.html#constant_MIN_CODIGO"
+        },                {
+            "fqsen": "\\MAX_DESC",
+            "name": "MAX_DESC",
+            "summary": "",
+            "url": "namespaces/default.html#constant_MAX_DESC"
+        },                {
+            "fqsen": "\\MIN_DESC",
+            "name": "MIN_DESC",
+            "summary": "",
+            "url": "namespaces/default.html#constant_MIN_DESC"
         },                {
             "fqsen": "\\validacionFormularios",
             "name": "validacionFormularios",
@@ -155,6 +175,66 @@ Search.appendIndex(
             "name": "ejecutarConsulta",
             "summary": "Funcion\u0020ejecutarConsulta",
             "url": "classes/DBPDO.html#method_ejecutarConsulta"
+        },                {
+            "fqsen": "\\ErrorApp",
+            "name": "ErrorApp",
+            "summary": "",
+            "url": "classes/ErrorApp.html"
+        },                {
+            "fqsen": "\\ErrorApp\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/ErrorApp.html#method___construct"
+        },                {
+            "fqsen": "\\ErrorApp\u003A\u003AgetCodError\u0028\u0029",
+            "name": "getCodError",
+            "summary": "",
+            "url": "classes/ErrorApp.html#method_getCodError"
+        },                {
+            "fqsen": "\\ErrorApp\u003A\u003AgetDescError\u0028\u0029",
+            "name": "getDescError",
+            "summary": "",
+            "url": "classes/ErrorApp.html#method_getDescError"
+        },                {
+            "fqsen": "\\ErrorApp\u003A\u003AgetArchivoError\u0028\u0029",
+            "name": "getArchivoError",
+            "summary": "",
+            "url": "classes/ErrorApp.html#method_getArchivoError"
+        },                {
+            "fqsen": "\\ErrorApp\u003A\u003AgetLineaError\u0028\u0029",
+            "name": "getLineaError",
+            "summary": "",
+            "url": "classes/ErrorApp.html#method_getLineaError"
+        },                {
+            "fqsen": "\\ErrorApp\u003A\u003AgetPaginaSiguiente\u0028\u0029",
+            "name": "getPaginaSiguiente",
+            "summary": "",
+            "url": "classes/ErrorApp.html#method_getPaginaSiguiente"
+        },                {
+            "fqsen": "\\ErrorApp\u003A\u003A\u0024codError",
+            "name": "codError",
+            "summary": "",
+            "url": "classes/ErrorApp.html#property_codError"
+        },                {
+            "fqsen": "\\ErrorApp\u003A\u003A\u0024descError",
+            "name": "descError",
+            "summary": "",
+            "url": "classes/ErrorApp.html#property_descError"
+        },                {
+            "fqsen": "\\ErrorApp\u003A\u003A\u0024archivoError",
+            "name": "archivoError",
+            "summary": "",
+            "url": "classes/ErrorApp.html#property_archivoError"
+        },                {
+            "fqsen": "\\ErrorApp\u003A\u003A\u0024lineaError",
+            "name": "lineaError",
+            "summary": "",
+            "url": "classes/ErrorApp.html#property_lineaError"
+        },                {
+            "fqsen": "\\ErrorApp\u003A\u003A\u0024paginaSiguiente",
+            "name": "paginaSiguiente",
+            "summary": "",
+            "url": "classes/ErrorApp.html#property_paginaSiguiente"
         },                {
             "fqsen": "\\Usuario",
             "name": "Usuario",

@@ -1,7 +1,16 @@
 <?php
+    /**
+     * @author Luis Ferreras González
+     * @version 1.0.0 Fecha última modificación del archivo: 15/01/2025
+     * @since 1.0.0
+     */
 
-/* 
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
- */
-
+    if(isset($_REQUEST['volver'])){
+        $_SESSION['paginaEnCurso']=$_SESSION['paginaAnterior'];
+        $_SESSION['paginaAnterior']='wip';
+        header('Location: index.php');
+        exit();
+    }
+    $idioma=isset($_COOKIE['idioma']) ? $_COOKIE['idioma'] : 'en';
+    require_once $aVistas['layout'];
+?>

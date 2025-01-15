@@ -1,7 +1,27 @@
 <?php
-
-/* 
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
- */
-
+    /**
+     * @author Luis Ferreras González
+     * @version 1.0.0 Fecha última modificación del archivo: 15/01/2025
+     * @since 1.0.0
+     */
+    /**
+     * @var array $bienvenida Array que contiene el mensaje de bienvenida.
+     */
+    $mensaje=[
+        'es'=>"Se está trabajando en esta página y no se encuentra disponible.",
+        'en'=>"This page is being worked on and isn't available.",
+        'pt'=>"pt wip"
+    ];
+?>
+<div id="idiomas">
+    <a href="?idioma=es" <?php if($idioma=="es"){echo "id='idiomaEscogido'";}?>>Español</a>
+    <a href="?idioma=en" <?php if($idioma=="en"){echo "id='idiomaEscogido'";}?>>Inglés</a>
+    <a href="?idioma=pt" <?php if($idioma=="pt"){echo "id='idiomaEscogido'";}?>>Portugués</a>
+    <form>
+        <input type="submit" name="volver" value="Volver">
+    </form>
+</div>
+<?php
+    echo "<p>".$mensaje[$idioma]."</p>";
+?>
+<div style='height: 30px'></div>

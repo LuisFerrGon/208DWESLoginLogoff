@@ -26,38 +26,28 @@ header{
 }
 main{
     /*Página principal*/
-    #idiomas{
-        position: relative;
-        a{
-            transition: all 0.5s ease-in-out;
-        }
-        a:hover{
-            color: var(--color6);
-            font-size: 20px;
-        }
-        #idiomaEscogido{
-            color: var(--color6);
-            font-size: 20px;
-        }
-        button{
-            position: absolute;
-            right: 0;
+    #top{
+        #idiomas{
+            position: relative;
+            a{
+                transition: all 0.5s ease-in-out;
+            }
             a:hover{
-                color: var(--color3);
-                font-size: calc(40px/3);
+                color: var(--color6);
+                font-size: 20px;
+            }
+            #idiomaEscogido{
+                color: var(--color6);
+                font-size: 20px;
             }
         }
-        form{
-            position: absolute;
-            right: 0;
-            top: -40%;
-            input{
-                color: var(--color3);
-                font-size: calc(40px/3);
+        #botones{
+            form{
+                input{
+                    color: var(--color3);
+                    font-size: calc(40px/3);
+                }
             }
-        }
-        form:nth-of-type(2){
-            right: 100px;
         }
     }
     #mapaAplicacion{

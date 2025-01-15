@@ -5,9 +5,21 @@
      * @since 1.0.0
      */
 ?>
-<form>
-    <input type="submit" name="volver" value="Volver">
-</form>
+<div id="top">
+    <section id="idiomas">
+        <a href="?idioma=es" <?php if($idioma=="es"){echo "id='idiomaEscogido'";}?>>Español</a>
+        <a href="?idioma=en" <?php if($idioma=="en"){echo "id='idiomaEscogido'";}?>>Inglés</a>
+        <a href="?idioma=pt" <?php if($idioma=="pt"){echo "id='idiomaEscogido'";}?>>Portugués</a>
+    </section>
+    <section id="botones">
+        <form>
+            <input type="submit" name="volver" value="Volver">
+        </form>
+        <form>
+            <input type="submit" name="registro" value="Registrarse">
+        </form>
+    </section>
+</div>
 <div id="formulariologin">
     <h2>Log in</h2>
     <form name="plantilla" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" novalidate>
