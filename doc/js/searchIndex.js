@@ -408,12 +408,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\UsuarioPDO\u003A\u003AbuscarUsuarioPorCod\u0028\u0029",
             "name": "buscarUsuarioPorCod",
-            "summary": "",
+            "summary": "Funcion\u0020para\u0020buscar\u0020un\u0020usuario",
             "url": "classes/UsuarioPDO.html#method_buscarUsuarioPorCod"
         },                {
             "fqsen": "\\UsuarioPDO\u003A\u003AaltaUsuario\u0028\u0029",
             "name": "altaUsuario",
-            "summary": "",
+            "summary": "Funcion\u0020de\u0020dar\u0020de\u0020alta\u0020un\u0020usuario",
             "url": "classes/UsuarioPDO.html#method_altaUsuario"
         },                {
             "fqsen": "\\UsuarioPDO\u003A\u003AvalidarCodNoExiste\u0028\u0029",

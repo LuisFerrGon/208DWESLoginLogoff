@@ -76,43 +76,12 @@
                 return $resultado;
             }
         }
+        public static function buscarUsuarioPorCod(){}
         /**
-         * Funcion para buscar un usuario
+         * Funcion de dar de alta un usuario
          * 
-         * Funcion que devuelve un usuario, en caso que exista, dado su codigo
-         * 
-         * @param string $sCodigo El codigo del usuario a buscar
-         * @return Usuario|null|PDOException Devuelve un objeto usuario si existe.
-         *                                   Devuelve null si no existe.
-         *                                   Devuelve PDOExcetion en caso de error.
-         * @author Luis Ferreras González
-         * @version 1.0.0 Fecha última modificación: 16/01/2025
-         * @since 1.0.0
-         */
-        public static function buscarUsuarioPorCod(string $sCodigo){
-            $oUsuario=null;
-            $consulta=<<<SQL
-                SELECT * FROM T01_Usuario WHERE T01_CodUsuario='{$sCodigo}';
-            SQL;
-            $resultado=DBPDO::ejecutarConsulta($consulta);
-            if($resultado instanceof PDOException){
-                return $resultado;
-            }else{
-                if($resultado!=null){
-                    $oUsuario=new Usuario(
-                        $resultado->T01_CodUsuario,
-                        $resultado->T01_Password,
-                        $resultado->T01_DescUsuario,
-                        $resultado->T01_NumConexiones,
-                        $resultado->T01_FechaHoraUltimaConexion,
-                        null,
-                        $resultado->T01_Perfil
-                    );
-                }
-            }
-            return $oUsuario;
-        }
-        /**
+         * Funcion que dado el codigo, la contraseña y la descripcion de un usuario
+         * lo añade a la base de datos.
          * 
          * @param string $sCodigo Codigo del usuario a añadir.
          * @param string $sContrasena Contraseña del usuario a añadir sin codificar
@@ -120,6 +89,9 @@
          * @param string $sDescripcion Descripción del usuario a añadir.
          * @return null|\PDOException En caso de error devuelve PDOException.
          *                            Si todo va bien devuelve null.
+         * @author Luis Ferreras González
+         * @version 1.0.0 Fecha última modificación del archivo: 16/01/2025
+         * @since 1.0.0
          */
         public static function altaUsuario(string $sCodigo, string $sContrasena, string $sDescripcion){
             $consulta=<<<SQL
@@ -135,7 +107,29 @@
                 return null;
             }
         }
-        public static function validarCodNoExiste(){
+        /**
+         * Funcion para comprobar si existe un codigo
+         * 
+         * Funcion que devuelve un boolean sobre la existencia de un usuario por su codigo
+         * 
+         * @param string $sCodigo El codigo a buscar
+         * @return boolean|PDOException Devuelve true si el usuario existe.
+         *                              Devuelve false si el usuario no existe.
+         *                              Devuelve PDOExcetion en caso de error.
+         * @author Luis Ferreras González
+         * @version 1.0.0 Fecha última modificación: 16/01/2025
+         * @since 1.0.0
+         */
+        public static function validarCodNoExiste(string $sCodigo){
+            $consulta=<<<SQL
+                SELECT * FROM T01_Usuario WHERE T01_CodUsuario='{$sCodigo}';
+            SQL;
+            $resultado=DBPDO::ejecutarConsulta($consulta);
+            if($resultado instanceof PDOException){
+                return $resultado;
+            }else{
+                return($resultado!=null);
+            }
         }
         public static function modificarUsuario(){
         }

@@ -36,7 +36,7 @@
         $aErrores['contrasenaUsuario']=validacionFormularios::validarPassword($_REQUEST['contrasenaUsuario'], MAX_PASS, MIN_PASS, DEBIL, OBLIGATORIO);
         $aErrores['descripcionUsuario']=validacionFormularios::comprobarAlfabetico($_REQUEST['descripcionUsuario'], MAX_DESC, MIN_DESC, OBLIGATORIO);
         if($aErrores['codigoUsuario']==null){
-            $resultado=UsuarioPDO::buscarUsuarioPorCod($_REQUEST['codigoUsuario']);
+            $resultado=UsuarioPDO::validarCodNoExiste($_REQUEST['codigoUsuario']);
             if($resultado instanceof PDOException){
                 $_SESSION['paginaAnterior']='registro';
                 $_SESSION['error']=new ErrorApp(

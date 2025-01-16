@@ -1,7 +1,7 @@
 <?php
     /**
      * @author Luis Ferreras González
-     * @version 1.0.0 Fecha última modificación del archivo: 14/01/2025
+     * @version 1.0.0 Fecha última modificación del archivo: 16/01/2025
      * @since 1.0.0
      */
 
@@ -20,6 +20,18 @@
     if(isset($_REQUEST['rest'])){
         $_SESSION['paginaAnterior']='inicioPrivado';
         $_SESSION['paginaEnCurso']='wip';
+        header('Location: index.php');
+        exit();
+    }
+    if(isset($_REQUEST['mtoDepartamiento'])){
+        $_SESSION['paginaAnterior']='inicioPrivado';
+        $_SESSION['paginaEnCurso']='wip';
+        header('Location: index.php');
+        exit();
+    }
+    if(isset($_REQUEST['cuenta'])){
+        $_SESSION['paginaAnterior']='inicioPrivado';
+        $_SESSION['paginaEnCurso']='miCuenta';
         header('Location: index.php');
         exit();
     }

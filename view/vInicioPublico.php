@@ -13,7 +13,7 @@
     </section>
     <section id="botones">
         <form>
-            <button type="submit" name="login">Iniciar sesión</button>
+            <input type="submit" name="login" value="Iniciar sesión">
         </form>
     </section>
 </div>

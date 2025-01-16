@@ -37,13 +37,11 @@
                     <td>
                         <input type="text" id="codigoUsuario" name="codigoUsuario" class="obligatorio" value="<?php echo(isset($_REQUEST['codigoUsuario']) && empty($aErrores['codigoUsuario'])?$_REQUEST['codigoUsuario']:'');?>" required>
                     </td>
-                    <td>
                         <?php
                             if(!empty($aErrores['codigoUsuario'])){
-                                echo "<span class='error'>".$aErrores['codigoUsuario']."</span>";
+                                echo "<td class='error'>".$aErrores['codigoUsuario']."</td>";
                             };
                         ?>
-                    </td>
                 </tr>
                 <tr>
                     <td>
@@ -52,13 +50,11 @@
                     <td>
                         <input type="password" id="contrasenaUsuario" name="contrasenaUsuario" class="obligatorio" value="<?php echo(isset($_REQUEST['contrasenaUsuario']) && empty($aErrores['contrasenaUsuario'])?$_REQUEST['contrasenaUsuario']:'');?>" required>
                     </td>
-                    <td>
                         <?php
                             if(!empty($aErrores['contrasenaUsuario'])){
-                                echo "<span class='error'>".$aErrores['contrasenaUsuario']."</span>";
+                                echo "<td class='error'>".$aErrores['contrasenaUsuario']."</td>";
                             };
                         ?>
-                    </td>
                 </tr>
                 <tr>
                     <td>
@@ -67,13 +63,11 @@
                     <td>
                         <input type="text" id="descripcionUsuario" name="descripcionUsuario" class="obligatorio" value="<?php echo(isset($_REQUEST['descripcionUsuario']) && empty($aErrores['descripcionUsuario'])?$_REQUEST['descripcionUsuario']:'');?>" required>
                     </td>
-                    <td>
                         <?php
                             if(!empty($aErrores['descripcionUsuario'])){
-                                echo "<span class='error'>".$aErrores['descripcionUsuario']."</span>";
+                                echo "<td class='error'>".$aErrores['descripcionUsuario']."</td>";
                             };
                         ?>
-                    </td>
                 </tr>
             </tbody>
             <tfoot>

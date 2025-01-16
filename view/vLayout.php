@@ -1,7 +1,7 @@
 <?php
     /**
      * @author Luis Ferreras González
-     * @version 1.0.0 Fecha última modificación del archivo: 14/01/2025
+     * @version 1.0.0 Fecha última modificación del archivo: 16/01/2025
      * @since 1.0.0
      */
     $idioma=isset($_COOKIE['idioma']) ? $_COOKIE['idioma'] : 'en';
@@ -24,8 +24,8 @@
             <a href="../index.html">Luis Ferreras</a>
             <a href="../208DWESProyectoDWES/indexProyectoDWES.php">DWES</a>
             <a href="https://github.com/LuisFerrGon/208DWESLoginLogoff" target="_blank">GitHub</a>
-            <p>Última revisión: <?php echo(date('d/m/Y', strtotime("15 January 2025")))?></p>
-            <a href="doc/index.html" target="_blank">Diagrama de clases</a>
+            <p>Última revisión: <?php echo(date('d/m/Y', strtotime("16 January 2025")))?></p>
+            <a href="doc/index.html" target="_blank">PHPDocumentator</a>
         </footer>
     </body>
 </html>

@@ -1,7 +1,7 @@
 <?php
     /**
      * @author Luis Ferreras González
-     * @version 1.0.0 Fecha última modificación del archivo: 15/01/2025
+     * @version 1.0.0 Fecha última modificación del archivo: 16/01/2025
      * @since 1.0.0
      */
     /**
@@ -39,7 +39,13 @@
             <input type="submit" name="rest" value="REST">
         </form>
         <form>
+            <input type="submit" name="mtoDepartamiento" value="Mantenimiento Departamentos">
+        </form>
+        <form>
             <input type="submit" name="error" value="Error">
+        </form>
+        <form>
+            <input type="submit" name="cuenta" value="<?php echo $avInicioPrivado['descripcion'];?>">
         </form>
     </section>
 </div>

@@ -1,14 +1,14 @@
 <?php
     /**
      * @author Luis Ferreras González
-     * @version 1.0.0 Fecha última modificación del archivo: 15/01/2025
+     * @version 1.0.0 Fecha última modificación del archivo: 16/01/2025
      * @since 1.0.0
      */
 
     /**
      * 
      * @author Luis Ferreras González
-     * @version 1.0.0 Fecha última modificación: 15/01/2025
+     * @version 1.0.0 Fecha última modificación: 16/01/2025
      * @since 1.0.0
      */
     class Usuario{
@@ -59,58 +59,58 @@
             $this->imagenUsuario = $imagenUsuario;
             $this->listaOpinionesUsuario = $listaOpinionesUsuario;
         }
-        public function getCodUsuario(): string {
+        public function getCodUsuario(){
             return $this->codUsuario;
         }
-        public function getPassword(): string {
+        public function getPassword(){
             return $this->password;
         }
-        public function getDescUsuario(): string {
+        public function getDescUsuario(){
             return $this->descUsuario;
         }
-        public function getNumConexiones(): int {
+        public function getNumConexiones(){
             return $this->numConexiones;
         }
-        public function getFechaHoraUltimaConexion(): string {
+        public function getFechaHoraUltimaConexion(){
             return $this->fechaHoraUltimaConexion;
         }
-        public function getFechaHoraUltimaConexionAnterior(): string {
+        public function getFechaHoraUltimaConexionAnterior(){
             return $this->fechaHoraUltimaConexionAnterior;
         }
-        public function getPerfil(): string {
+        public function getPerfil(){
             return $this->perfil;
         }
-        public function getImagenUsuario(): type {
+        public function getImagenUsuario(){
             return $this->imagenUsuario;
         }
-        public function getListaOpinionesUsuario(): type {
+        public function getListaOpinionesUsuario(){
             return $this->listaOpinionesUsuario;
         }
-        public function setCodUsuario(string $codUsuario): void {
+        public function setCodUsuario($codUsuario){
             $this->codUsuario = $codUsuario;
         }
-        public function setPassword(string $password): void {
+        public function setPassword($password){
             $this->password = $password;
         }
-        public function setDescUsuario(string $descUsuario): void {
+        public function setDescUsuario($descUsuario){
             $this->descUsuario = $descUsuario;
         }
-        public function setNumConexiones(int $numConexiones): void {
+        public function setNumConexiones($numConexiones){
             $this->numConexiones = $numConexiones;
         }
-        public function setFechaHoraUltimaConexion(string $fechaHoraUltimaConexion): void {
+        public function setFechaHoraUltimaConexion($fechaHoraUltimaConexion){
             $this->fechaHoraUltimaConexion = $fechaHoraUltimaConexion;
         }
-        public function setFechaHoraUltimaConexionAnterior(string $fechaHoraUltimaConexionAnterior): void {
+        public function setFechaHoraUltimaConexionAnterior($fechaHoraUltimaConexionAnterior){
             $this->fechaHoraUltimaConexionAnterior = $fechaHoraUltimaConexionAnterior;
         }
-        public function setPerfil(string $perfil): void {
+        public function setPerfil($perfil){
             $this->perfil = $perfil;
         }
-        public function setImagenUsuario(type $imagenUsuario): void {
+        public function setImagenUsuario($imagenUsuario){
             $this->imagenUsuario = $imagenUsuario;
         }
-        public function setListaOpinionesUsuario(type $listaOpinionesUsuario): void {
+        public function setListaOpinionesUsuario($listaOpinionesUsuario){
             $this->listaOpinionesUsuario = $listaOpinionesUsuario;
         }
     }
