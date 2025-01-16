@@ -13,7 +13,7 @@
     }
     if(isset($_REQUEST['registro'])){
         $_SESSION['paginaAnterior']='login';
-        $_SESSION['paginaEnCurso']='registro';
+        $_SESSION['paginaEnCurso']='wip';
         header('Location: index.php');
         exit();
     }

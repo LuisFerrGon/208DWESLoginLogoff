@@ -1,7 +1,7 @@
 <?php
     /**
      * @author Luis Ferreras González
-     * @version 1.0.0 Fecha última modificación del archivo: 15/01/2025
+     * @version 1.0.0 Fecha última modificación del archivo: 16/01/2025
      * @since 1.0.0
      */
     /**
@@ -13,13 +13,17 @@
         'pt'=>"pt wip"
     ];
 ?>
-<div id="idiomas">
-    <a href="?idioma=es" <?php if($idioma=="es"){echo "id='idiomaEscogido'";}?>>Español</a>
-    <a href="?idioma=en" <?php if($idioma=="en"){echo "id='idiomaEscogido'";}?>>Inglés</a>
-    <a href="?idioma=pt" <?php if($idioma=="pt"){echo "id='idiomaEscogido'";}?>>Portugués</a>
-    <form>
-        <input type="submit" name="volver" value="Volver">
-    </form>
+<div id="top">
+    <section id="idiomas">
+        <a href="?idioma=es" <?php if($idioma=="es"){echo "id='idiomaEscogido'";}?>>Español</a>
+        <a href="?idioma=en" <?php if($idioma=="en"){echo "id='idiomaEscogido'";}?>>Inglés</a>
+        <a href="?idioma=pt" <?php if($idioma=="pt"){echo "id='idiomaEscogido'";}?>>Portugués</a>
+    </section>
+    <section id="botones">
+        <form>
+            <input type="submit" name="volver" value="Volver">
+        </form>
+    </section>
 </div>
 <div id="formulariologin">
     <h2>Registro de usuario</h2>
@@ -31,16 +35,29 @@
                         <label for="codigoUsuario">Código:</label>
                     </td>
                     <td>
-                        <input type="text" id="codigoUsuario" name="codigoUsuario" class="obligatorio" required>
+                        <input type="text" id="codigoUsuario" name="codigoUsuario" class="obligatorio" value="<?php echo(isset($_REQUEST['codigoUsuario']) && empty($aErrores['codigoUsuario'])?$_REQUEST['codigoUsuario']:'');?>" required>
                     </td>
-                    
+                    <td>
+                        <?php
+                            if(!empty($aErrores['codigoUsuario'])){
+                                echo "<span class='error'>".$aErrores['codigoUsuario']."</span>";
+                            };
+                        ?>
+                    </td>
                 </tr>
                 <tr>
                     <td>
                         <label for="contrasenaUsuario">Contraseña:</label>
                     </td>
                     <td>
-                        <input type="password" id="contrasenaUsuario" name="contrasenaUsuario" class="obligatorio" required>
+                        <input type="password" id="contrasenaUsuario" name="contrasenaUsuario" class="obligatorio" value="<?php echo(isset($_REQUEST['contrasenaUsuario']) && empty($aErrores['contrasenaUsuario'])?$_REQUEST['contrasenaUsuario']:'');?>" required>
+                    </td>
+                    <td>
+                        <?php
+                            if(!empty($aErrores['contrasenaUsuario'])){
+                                echo "<span class='error'>".$aErrores['contrasenaUsuario']."</span>";
+                            };
+                        ?>
                     </td>
                 </tr>
                 <tr>
@@ -48,14 +65,21 @@
                         <label for="descripcionUsuario">Descripción:</label>
                     </td>
                     <td>
-                        <input type="text" id="descripcionUsuario" name="descripcionUsuario" class="obligatorio" required>
+                        <input type="text" id="descripcionUsuario" name="descripcionUsuario" class="obligatorio" value="<?php echo(isset($_REQUEST['descripcionUsuario']) && empty($aErrores['descripcionUsuario'])?$_REQUEST['descripcionUsuario']:'');?>" required>
+                    </td>
+                    <td>
+                        <?php
+                            if(!empty($aErrores['descripcionUsuario'])){
+                                echo "<span class='error'>".$aErrores['descripcionUsuario']."</span>";
+                            };
+                        ?>
                     </td>
                 </tr>
             </tbody>
             <tfoot>
                 <tr>
                     <td>
-                        <input id="registro" name="registro" type="submit" value="Regiastrarse">
+                        <input id="registro" name="registro" type="submit" value="Registrarse">
                     </td>
                 </tr>
             </tfoot>

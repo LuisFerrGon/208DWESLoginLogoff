@@ -1,7 +1,7 @@
 <?php
     /**
      * @author Luis Ferreras González
-     * @version 1.0.0 Fecha última modificación del archivo: 15/01/2025
+     * @version 1.0.0 Fecha última modificación del archivo: 16/01/2025
      * @since 1.0.0
      */
 
@@ -30,15 +30,57 @@
         'contrasenaUsuario' => '',
         'descripcionUsuario' => ''
     ];
-    
-    if(isset($_REQUEST['login'])){
+    $entradaOK=true;
+    if(isset($_REQUEST['registro'])){
         $aErrores['codigoUsuario']=validacionFormularios::comprobarAlfabetico($_REQUEST['codigoUsuario'], MAX_CODIGO, MIN_CODIGO, OBLIGATORIO);
         $aErrores['contrasenaUsuario']=validacionFormularios::validarPassword($_REQUEST['contrasenaUsuario'], MAX_PASS, MIN_PASS, DEBIL, OBLIGATORIO);
         $aErrores['descripcionUsuario']=validacionFormularios::comprobarAlfabetico($_REQUEST['descripcionUsuario'], MAX_DESC, MIN_DESC, OBLIGATORIO);
-        if($aErrores['codigoUsuario']==null && $aErrores['contrasenaUsuario']==null){
+        if($aErrores['codigoUsuario']==null){
+            $resultado=UsuarioPDO::buscarUsuarioPorCod($_REQUEST['codigoUsuario']);
+            if($resultado instanceof PDOException){
+                $_SESSION['paginaAnterior']='registro';
+                $_SESSION['error']=new ErrorApp(
+                    $resultado->getCode(),
+                    $resultado->getMessage(),
+                    $resultado->getFile(),
+                    $resultado->getLine(),
+                    $_SESSION['paginaAnterior']
+                );
+                $_SESSION['paginaEnCurso']='error';
+                header('Location: index.php');
+                exit();
+            }
+            if($resultado instanceof Usuario){
+                $aErrores['codigoUsuario']="Este código de usuario ya está en uso, escoja otro.";
+            }
+        }
+        foreach ($aErrores as $value) {
+            if ($value!=null){
+                $entradaOK=false;
+            }
+        }
+    }else{
+        $entradaOK=false;
+    }
+    if($entradaOK==true){
+        $resultado=UsuarioPDO::altaUsuario($_REQUEST['codigoUsuario'], $_REQUEST['contrasenaUsuario'], $_REQUEST['descripcionUsuario']);
+        if($resultado instanceof PDOException){
+            $_SESSION['paginaAnterior']='registro';
+            $_SESSION['error']=new ErrorApp(
+                $resultado->getCode(),
+                $resultado->getMessage(),
+                $resultado->getFile(),
+                $resultado->getLine(),
+                $_SESSION['paginaAnterior']
+            );
+            $_SESSION['paginaEnCurso']='error';
+            header('Location: index.php');
+            exit();
+        }
+        if($resultado==null){
             $oUsuarioActivo=UsuarioPDO::validarUsuario($_REQUEST['codigoUsuario'], $_REQUEST['contrasenaUsuario']);
             if($oUsuarioActivo instanceof PDOException){
-                $_SESSION['paginaAnterior']='login';
+                $_SESSION['paginaAnterior']='registro';
                 $_SESSION['error']=new ErrorApp(
                     $oUsuarioActivo->getCode(),
                     $oUsuarioActivo->getMessage(),
@@ -53,7 +95,7 @@
             if($oUsuarioActivo instanceof Usuario){
                 UsuarioPDO::registrarUltimaConexion($oUsuarioActivo);
                 $_SESSION['usuarioDAW208LoginLogoff']=$oUsuarioActivo;
-                $_SESSION['paginaAnterior']='login';
+                $_SESSION['paginaAnterior']='registro';
                 $_SESSION['paginaEnCurso']='inicioPrivado';
                 header('Location: index.php');
                 exit();
