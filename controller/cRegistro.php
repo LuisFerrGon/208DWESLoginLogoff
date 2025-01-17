@@ -1,7 +1,7 @@
 <?php
     /**
      * @author Luis Ferreras González
-     * @version 1.0.0 Fecha última modificación del archivo: 16/01/2025
+     * @version 1.0.0 Fecha última modificación del archivo: 17/01/2025
      * @since 1.0.0
      */
 
@@ -12,7 +12,6 @@
         exit();
     }
     $idioma=isset($_COOKIE['idioma']) ? $_COOKIE['idioma'] : 'en';
-    require_once $aVistas['layout'];require_once $aVistas['layout'];
     require_once 'core/lValidacionFormularios.php';
     require_once 'config/confDB.php';
     
@@ -50,7 +49,7 @@
                 header('Location: index.php');
                 exit();
             }
-            if($resultado instanceof Usuario){
+            if($resultado==true){
                 $aErrores['codigoUsuario']="Este código de usuario ya está en uso, escoja otro.";
             }
         }
@@ -102,4 +101,5 @@
             }
         }
     }
+    require_once $aVistas['layout'];
 ?>

@@ -24,7 +24,7 @@
             <a href="../index.html">Luis Ferreras</a>
             <a href="../208DWESProyectoDWES/indexProyectoDWES.php">DWES</a>
             <a href="https://github.com/LuisFerrGon/208DWESLoginLogoff" target="_blank">GitHub</a>
-            <p>Última revisión: <?php echo(date('d/m/Y', strtotime("16 January 2025")))?></p>
+            <p>Última revisión: <?php echo(date('d/m/Y', strtotime("17 January 2025")))?></p>
             <a href="doc/index.html" target="_blank">PHPDocumentator</a>
         </footer>
     </body>

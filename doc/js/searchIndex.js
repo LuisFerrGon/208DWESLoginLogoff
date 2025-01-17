@@ -408,7 +408,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\UsuarioPDO\u003A\u003AbuscarUsuarioPorCod\u0028\u0029",
             "name": "buscarUsuarioPorCod",
-            "summary": "Funcion\u0020para\u0020buscar\u0020un\u0020usuario",
+            "summary": "",
             "url": "classes/UsuarioPDO.html#method_buscarUsuarioPorCod"
         },                {
             "fqsen": "\\UsuarioPDO\u003A\u003AaltaUsuario\u0028\u0029",
@@ -418,7 +418,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\UsuarioPDO\u003A\u003AvalidarCodNoExiste\u0028\u0029",
             "name": "validarCodNoExiste",
-            "summary": "",
+            "summary": "Funcion\u0020para\u0020comprobar\u0020si\u0020existe\u0020un\u0020codigo",
             "url": "classes/UsuarioPDO.html#method_validarCodNoExiste"
         },                {
             "fqsen": "\\UsuarioPDO\u003A\u003AmodificarUsuario\u0028\u0029",

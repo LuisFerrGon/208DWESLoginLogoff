@@ -1,31 +1,40 @@
 <?php
     /**
      * @author Luis Ferreras González
-     * @version 1.0.0 Fecha última modificación del archivo: 16/01/2025
+     * @version 1.0.0 Fecha última modificación del archivo: 17/01/2025
      * @since 1.0.0
      */
     /**
      * @var array $bienvenida Array que contiene el mensaje de bienvenida.
      */
     $mensaje=[
-        'es'=>
-            "Descripción: {$avMiCuenta['descripcion']}<br>
-            Última conexión: ".$avMiCuenta['ultimaConexion']->format('d/m/Y H:i:s')."<br>
-            Conexión anterior: ".date('d/m/Y H:i:s', $avMiCuenta['conexionAnterior'])."<br>
-            Nº de conexiones: {$avMiCuenta['conexiones']}<br>
-        ",
-        'en'=>"
-            Description: {$avMiCuenta['descripcion']}<br>
-            Latest connection: ".$avMiCuenta['ultimaConexion']->format('m/d/Y H:i:s')."<br>
-            Last connection: ".date('m/d/Y H:i:s', $avMiCuenta['conexionAnterior'])."<br>
-            Number of connections: {$avMiCuenta['conexiones']}<br>
-        ",
-        'pt'=>"
-            Description: {$avMiCuenta['descripcion']}<br>
-            Latest connection: ".$avMiCuenta['ultimaConexion']->format('d/m/Y H:i:s')."<br>
-            Last connection: ".date('d/m/Y H:i:s', $avMiCuenta['conexionAnterior'])."<br>
-            Number of connections: {$avMiCuenta['conexiones']}<br>
-        "
+        'es'=>[
+            0=>"Descripción: {$avMiCuenta['descripcion']}<br>"
+                ."Última conexión: ".$avMiCuenta['ultimaConexion']->format('d/m/Y H:i:s')."<br>"
+                ."Nº de conexiones: {$avMiCuenta['conexiones']}<br>",
+            1=>"Descripción: {$avMiCuenta['descripcion']}<br>"
+                ."Última conexión: ".$avMiCuenta['ultimaConexion']->format('d/m/Y H:i:s')."<br>"
+                ."Conexión anterior: ".date('d/m/Y H:i:s', $avMiCuenta['conexionAnterior'])."<br>"
+                ."Nº de conexiones: {$avMiCuenta['conexiones']}<br>"
+        ],
+        'en'=>[
+            0=>"Description: {$avMiCuenta['descripcion']}<br>"
+                ."Latest connection: ".$avMiCuenta['ultimaConexion']->format('m/d/Y H:i:s')."<br>"
+                ."Number of connections: {$avMiCuenta['conexiones']}<br>",
+            1=>"Description: {$avMiCuenta['descripcion']}<br>"
+                ."Latest connection: ".$avMiCuenta['ultimaConexion']->format('m/d/Y H:i:s')."<br>"
+                ."Last connection: ".date('m/d/Y H:i:s', $avMiCuenta['conexionAnterior'])."<br>"
+                ."Number of connections: {$avMiCuenta['conexiones']}<br>"
+        ],
+        'pt'=>[
+            0=>"Description: {$avMiCuenta['descripcion']}<br>"
+                ."Latest connection: ".$avMiCuenta['ultimaConexion']->format('m/d/Y H:i:s')."<br>"
+                ."Number of connections: {$avMiCuenta['conexiones']}<br>",
+            1=>"Description: {$avMiCuenta['descripcion']}<br>"
+                ."Latest connection: ".$avMiCuenta['ultimaConexion']->format('m/d/Y H:i:s')."<br>"
+                ."Last connection: ".date('d/m/Y H:i:s', $avMiCuenta['conexionAnterior'])."<br>"
+                ."Number of connections: {$avMiCuenta['conexiones']}<br>"
+        ]
     ];
 ?>
 <div id="top">
@@ -42,6 +51,6 @@
 </div>
 <?php
     echo "<h2>".$avMiCuenta['codigo']."</h2>";
-    echo "<p>".$mensaje[$idioma]."</p>";
+    echo "<p>".$mensaje[$idioma][$avMiCuenta['conexionAnterior']!=null]."</p>";
 ?>
 <div style='height: 30px'></div>

@@ -25,7 +25,7 @@
         </form>
     </section>
 </div>
-<div id="formulariologin">
+<div id="formularioregistro">
     <h2>Registro de usuario</h2>
     <form name="plantilla" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" novalidate>
         <table>
